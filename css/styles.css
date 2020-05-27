@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* Global Styles */
+/* -------------------------------------------- */
+body {
+	margin: 0;
+	color: #edeeef;
+	font-family: Georgia, serif;
+}
+
+img {
+	width: 600px;
+	max-width: 100%;
+}
+
+a {
+	color: white;
+	font-style: italic;
+	font-size: .8em;
+}
+
+p {
+	margin: .5em auto;
+}
+/* -------------------------------------------- */
+
+
+/* Styling classes */
+/* -------------------------------------------- */
+.clear {
+	clear: both;
+}
+
+.i {
+	font-style: italic;
+}
+
+.left {
+	clear: both;
+	font-weight: bold;
+	width: 15%;
+	float: left;
+	font-variant: small-caps;
+}
+
+.right {
+	width: 83%;
+	float: right;
+	padding-bottom: 5px;
+	padding-right: 20px;
+}
+/* -------------------------------------------- */
+
+
+/* Text styling */
+/* -------------------------------------------- */
+h1 {
+	font-size: 4em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h2 {
+	margin-top: 0;
+	padding-top: .5%;
+	font-size: 1.8em;
+	margin-bottom: .5em;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+
+div, p, li {
+	font-family: Encode Sans, sans-serif;
+}
+/* -------------------------------------------- */
+
+
+
+header, section, footer {
+	min-height: 150px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+header, section {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+header {
+	background: #00B9AE;
+	margin-top: 0;
+	padding-top: 10%;
+}
+
+.projects {
+	background: #037171;
+}
+
+.projects article {
+	margin-bottom: 2.8em;
+}
+
+.projects article:last-of-type {
+	margin-bottom: 0;
+}
+
+.edu {
+	background: #03312E; 
+	padding-bottom: 1.5em;
+}
+
+.certs {
+	background: #02C3BD;
+	padding-bottom: 1.5em;
+}
+
+.work-exp {
+	background: #009F93;
+}
+
+footer {
+	padding-top: 1em;
+	background: #022B3A;
+}
