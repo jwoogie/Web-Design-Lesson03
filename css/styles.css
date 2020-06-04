@@ -86,6 +86,8 @@ article div, p, li {
 
 
 
+
+/* Specific Styles */
 header, section, footer {
 	min-height: 160px;
 	width: 1150px;
@@ -100,6 +102,79 @@ header, section, footer {
 	padding-top: 10%;
 	text-align: center;
 }
+
+/* Nav Styling */
+/* -------------------------------------------- */
+nav {
+	margin-top: 1em;
+}
+
+/* Removes bullets, sets inline/horizontal nav menu */
+nav ul {		
+    list-style: none; 
+    padding:0;
+    margin:0;
+	display: inline-block;
+}
+
+/* Makes each first level list item float left, and removes inherit margin */
+/* Works differently than setting as an inline-block would. */
+nav ul li { 	
+    float: left;
+	margin-left: 0;
+}
+
+/* Sets styling for the first-level menu items as anchor tags */
+nav ul li a {	
+	display: block;
+    background-color: #E7EFEB;
+    padding: 10px;
+    text-decoration: none;
+    color: #037171;
+    width: 120px; 
+}
+
+/* Hides dropdown when not hovered */
+nav li ul {		
+    display: none;
+}
+
+/* Shows the dropdown menu when hovering over first-level menu item */
+nav li:hover ul {
+    display: block; 
+    position: absolute; 
+}
+
+/* Removes floats from the dropdown list items when the dropdown menu is hovered over */
+nav li:hover li {
+    float: none; 
+}
+
+/* Sets style coloring for dropdown menu */
+nav li:hover a {
+    background-color: #F6F7F7; 
+	color: #303030;
+}
+
+/* When a dropdown menu is hovered over, sets the top level color style */
+nav li:hover .dropdown-menu {
+	background: deepskyblue;
+	color: #303030;
+}
+
+/* Sets style coloring for hover focus in dropdown menu items */
+nav ul li a:hover {	
+    background: deepskyblue;
+    color: white;
+}
+
+/* When a dropdown menu is hovered over, and the top level item is hovered, sets style */
+nav li:hover .dropdown-menu:hover {
+	color: white;
+	background-color: deepskyblue;
+}
+/* End Nav Styling */
+/* -------------------------------------------- */
 
 .projects {
 	background: #037171;
@@ -118,19 +193,19 @@ figure {
 }
 
 figcaption {
-	margin-top: 2px;
+	margin-top: .5%;
 }
 
 figure a {
-	padding: 4px;
-	background-color: #ceded7;
+	padding: 6px 20%;
+	background-color: #DAE7E1;
 	color: black;
-	border-radius: 5px;
+	border-radius: 2px;
 	text-decoration: none;
 }
 
 figure a:hover {
-	background-color: white;
+	background-color: #ECEFEE;
 }
 
 figure a:visited {
@@ -169,10 +244,21 @@ footer a:hover, footer a:focus, footer a:active {
 	font-size: .85em;	
 }
 
+
+@media only screen and (max-width: 500px) {
+	figure a {
+		padding: 3px 5px;
+	}
+}
+
+
 @media only screen and (max-width: 1150px) {
 	header, section, footer {
 		width: auto;
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	h1 {
+		font-size: 3em;
 	}
 }
